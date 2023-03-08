@@ -9,7 +9,7 @@ dir_path = "/Users/jasonyuan/Desktop/Kherani Lab/Memristor/Keithley Data/Jason -
 base_pth = "/Users/jasonyuan/Desktop/Kherani Lab/Memristor/Raw Data Plots/24mTorr/Block 3/Timing/Feb 10/Components of Stitched"
 
 # file_path is path to the excel file
-file_path = "/Users/jasonyuan/Desktop/Kherani Lab/Memristor/Ion Channel/zihanrelax.xlsx"
+file_path = "/Users/jasonyuan/Desktop/Kherani Lab/Memristor/Keithley Data/Au Vertical/February 27/1 mA scale/STDP_10V_Full_40mTorr_6_2.xls"
 
 def strSplit(filename):
     string = filename.split("_")
@@ -58,7 +58,7 @@ if __name__ == "__main__":
             ax1.tick_params(axis='x', which='both', labelcolor='k')
             ax1.tick_params(axis='y', which='both', labelcolor='cornflowerblue')
 
-            ax2.plot(time,current_CH2,linestyle='-',color='darkorange',label="Current CH1")
+            ax2.plot(time,current_CH1,linestyle='-',color='darkorange',label="Current CH1")
             # ax2.plot(time,current_CH2,linestyle='-',color='tomato',label='Current CH2')
             ax2.xaxis.set_minor_locator(AutoMinorLocator())
             ax2.yaxis.set_minor_locator(AutoMinorLocator())
